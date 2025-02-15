@@ -16,14 +16,14 @@ WallpaperService.get_default()
 
 app.add_icons(f"{Utils.get_current_dir()}/icons")
 app.apply_css(Utils.get_current_dir() + "/style.scss")
-
+"""
 Utils.exec_sh("gsettings set org.gnome.desktop.interface gtk-theme Material")
 Utils.exec_sh("gsettings set org.gnome.desktop.interface icon-theme Papirus")
 Utils.exec_sh(
     'gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Regular 11"'
 )
+"""
 Utils.exec_sh("hyprctl reload")
-
 
 ControlCenter()
 
